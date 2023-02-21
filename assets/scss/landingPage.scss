@@ -1,0 +1,69 @@
+$color_1: #fff;
+$color_2: rgb(199, 139, 255);
+$color_3: rgb(233, 185, 255);
+$color_4: rgba(68, 25, 109, 0.623);
+$font-family_1: 'poppins' ,sans-serif;
+$font-family_2: 'poppins' , sans-serif;
+$background-color_1: white;
+
+/* .logo{
+    height: 20%;
+    float: left;
+    color: azure;
+    list-style: none;
+    
+} */
+* {
+	margin: 0;
+	padding: 0;
+}
+.banner-area {
+	background-image: url('https://images.unsplash.com/photo-1635514874042-beb98fd8ea43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI4fHx0ZWNobm9sb2d5JTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	width: auto;
+	margin: auto;
+}
+
+.banner-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+	padding: 5px;
+	h1 {
+		text-align: center;
+		color: #9126c3;
+		text-transform: uppercase;
+		font-size: 60px;
+		font-family: $font-family_2;
+		background-color: #00000094;
+		// border-radius: 1.8rem;
+
+	}
+	p {
+		color: $color_1;
+		font-size: 25px;
+		background-color: #00000054;
+
+	}
+	a {
+		border: 1px solid #fff;
+		padding: 10px 25px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 14px;
+		margin-top: 20px;
+		display: inline-block;
+		color: $color_1;
+		font-weight: 800;
+		background-color: #0000009c;
+
+		&:hover {
+			background-color: $background-color_1;
+			color: $color_4;
+		}
+	}
+}

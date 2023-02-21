@@ -1,0 +1,108 @@
+$card-width: 250px;
+$card-height: 400px;
+$card-background-color: white;
+$card-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+$card-border-radius: 10px;
+$card-margin: 20px;
+$card-text-color: #555;
+$card-title-color: #333;
+$card-title-size: 24px;
+$card-title-weight: bold;
+$card-text-size: 16px;
+$card-button-background: #333;
+$card-button-color: white;
+$card-button-border-radius: 25px;
+$card-button-padding: 10px 20px;
+$card-button-font-size: 12px;
+$card-button-font-weight: bold;
+$card-button-hover-background: #555;
+
+body{
+background: linear-gradient(#141e30, #243b55);
+
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  .card {
+    width: $card-width;
+    background-color: $card-background-color;
+    box-shadow: $card-shadow;
+    border-radius: $card-border-radius;
+    overflow: hidden;
+    margin: $card-margin;
+    text-align: center;
+    padding: 20px;
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h3 {
+      margin-top: 20px;
+      font-size: $card-title-size;
+      font-weight: $card-title-weight;
+      color: $card-title-color;
+      text-transform: capitalize;
+    }
+
+    p {
+      text-transform: capitalize;
+      font-size: $card-text-size;
+      color: $card-text-color;
+      text-align: justify;
+      text-align: center;
+    }
+    a{
+        button {
+            padding: $card-button-padding;
+            background-color: #5685c7;
+            color: $card-button-color;
+            border: none;
+            border-radius: $card-button-border-radius;
+            font-size: $card-button-font-size;
+            font-weight: $card-button-font-weight;
+            margin-top: 20px;
+            cursor: pointer;
+      
+            &:hover {
+              background-color: $card-button-hover-background;
+            }
+          }
+    }
+    form{
+      color: black;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+      label{
+        color: rgb(228, 43, 43);
+        font-weight: 600;
+        letter-spacing: .5px;
+      }
+      select{
+        padding: 2px;
+        text-transform: capitalize;
+      }
+      button{
+        padding: 5px;
+        cursor: pointer;
+        font-weight: 700;
+        letter-spacing: .5px;
+        background-color: #e55f7f;
+        width: 100px;
+        border-radius: 1.8rem;
+        border: none;
+        color: white;
+      }
+    }
+  }
+}
